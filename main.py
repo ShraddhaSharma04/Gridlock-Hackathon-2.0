@@ -1,0 +1,13 @@
+import pandas as pd
+train = pd.read_csv("train.csv")
+test = pd.read_csv("test.csv")
+sample = pd.read_csv("sample_submission.csv")
+print("Train shape:", train.shape)
+print("Test shape:", test.shape)
+print("Sample submission shape:", sample.shape)
+print("\nTrain columns:")
+print(train.columns)
+print("\nMissing values:")
+print(train.isnull().sum())
+print("\nFirst 5 rows:")
+print(train.head())
